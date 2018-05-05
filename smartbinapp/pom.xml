@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>hackathon2018</groupId>
-	<artifactId>smartbin</artifactId>
+	<groupId>com.googlecloudtest</groupId>
+	<artifactId>cloudtest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>smartbin</name>
-	<description>Smart Bin</description>
+	<name>demo</name>
+	<description>Project for checking google cloud</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -35,10 +35,6 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-gcp-starter</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter-storage</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>mysql</groupId>
@@ -50,6 +46,19 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-vision</artifactId>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-vision -->
+		<dependency>
+		    <groupId>com.google.apis</groupId>
+		    <artifactId>google-api-services-vision</artifactId>
+		    <version>v1-rev1-1.19.1</version>
+		</dependency>
+        
 	</dependencies>
 
 	<dependencyManagement>
